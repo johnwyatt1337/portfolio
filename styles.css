@@ -158,10 +158,12 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1500px) {
   #welcome-section {
     font-size: 1.5em;
   }
+
+  
 
   #projects {
     font-size: 1.5em;
