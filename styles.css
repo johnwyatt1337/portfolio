@@ -9,6 +9,13 @@ body {
   color: #e0ffff; /* Light Cyan */
 }
 
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
 #navbar {
   position: fixed;
   top: 0;
@@ -84,6 +91,7 @@ body {
   font-family: 'Poppins', sans-serif; /* Apply Poppins font */
   text-align: center;
   color: #e0ffff; /* Light Cyan */
+  margin-bottom: 50px; /* Add margin to the bottom */
 }
 
 .projects-section-header {
@@ -93,9 +101,9 @@ body {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px; /* Adjust the gap between grid items */
-  padding-left: 250px;
-  padding-right:250px;
+  gap: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .project-tile {
@@ -120,13 +128,14 @@ body {
   text-align: center;
   color: #e0ffff; /* Light Cyan */
   text-decoration: underline;
-  padding-top: 60px;
+  padding-top: 500px;
   margin-bottom: 20px;
 }
 
 .contact-section {
   text-align: center;
   padding: 50px 0;
+  margin-top: 50px; /* Add margin to the top */
 }
 
 .contact-links {
@@ -163,13 +172,23 @@ a {
     font-size: 1.5em;
   }
 
-  
-
   #projects {
     font-size: 1.5em;
+    margin-bottom: 50px; /* Adjust margin for smaller screens */
   }
 
   .projects-grid {
-    grid-template-columns: 1fr; /* Stack the grid items on smaller screens */
+    grid-template-columns: repeat(2, 1fr); /* Display grid items in groups of 2 on smaller screens */
+  }
+
+  .contact-section {
+    padding: 30px 0; /* Adjust padding for smaller screens */
+    margin-top: 50px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Stack the grid items on very small screens */
   }
 }
